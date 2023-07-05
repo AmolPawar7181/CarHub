@@ -5,9 +5,6 @@ export interface CustomButtonProps {
 	containerStyles?: string;
 	handleClick?: MouseEventHandler<HTMLButtonElement>;
 	btnType?: 'button' | 'submit';
-	textStyles?: string;
-	rightIcon?: string;
-	isDisabled?: boolean;
 }
 
 export interface SerachManufacturerProps {

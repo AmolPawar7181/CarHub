@@ -1,4 +1,4 @@
-import {CarCard, CustomFilter, Hero, SearchBar} from '@/components';
+import {CustomFilter, Hero, SearchBar} from '@/components';
 import {fetchCars} from '@/utils';
 
 export default async function Home() {
@@ -24,13 +24,7 @@ export default async function Home() {
 				</div>
 
 				{!isDataEmpty ? (
-					<section>
-						<div className='home__cars-wrapper'>
-							{allCars?.map((car) => (
-								<CarCard car={car} />
-							))}
-						</div>
-					</section>
+					<section>We have cars</section>
 				) : (
 					<div className='home__error-container'>
 						<h2 className='text-black text-xl font-bold'>Oops, no results</h2>
