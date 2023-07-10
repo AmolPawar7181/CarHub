@@ -11,8 +11,8 @@ export interface CustomButtonProps {
 }
 
 export interface SerachManufacturerProps {
-	//manufacturer: string;
-	//setManufacturer: (manufacturer: string) => void;
+	manufacturer: string;
+	setManufacturer: (manufacturer: string) => void;
 	selected: string;
 	setSelected: (selected: string) => void;
 }
@@ -32,8 +32,6 @@ export interface CarProps {
 	year: number;
 }
 
-export type CarState = CarProps[] & {message?: string};
-
 export interface FilterProps {
 	manufacturer: string;
 	year: number;
@@ -46,9 +44,10 @@ export interface OptionsProps {
 	title: string;
 	value: string;
 }
-export interface CustomFilterProps<T> {
+export interface CustomFilterProps {
+	title: string;
 	options: OptionsProps[];
-	setFilter: (value: T) => void;
+	setFilter: (value: string) => void;
 }
 
 export interface ShowMoreProps {
@@ -57,7 +56,4 @@ export interface ShowMoreProps {
 	setLimit: (limit: number) => void;
 }
 
-export interface SearchBarProps {
-	setManufacturer: (value: string) => void;
-	setModel: (value: string) => void;
-}
+export interface SearchBoxProps {}

@@ -15,7 +15,7 @@ const CustomFilter = ({title, options, setFilter}: CustomFilterProps) => {
 				value={selected}
 				onChange={(e) => {
 					setSelected(e);
-					setFilter(e.value);
+					setFilter(e);
 				}}
 			>
 				<div className='relative w-fit z-10'>

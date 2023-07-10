@@ -52,6 +52,7 @@ export default function Home() {
 					<h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
 					<p>Explore the cars you might like</p>
 				</div>
+
 				<div className='home__filters'>
 					/** manufacturer and model search box */
 					<SearchBar setManufacturer={setManufacturer} setModel={setModel} />
@@ -65,7 +66,7 @@ export default function Home() {
 						/>
 					</div>
 				</div>
-				/** Car card */
+
 				{allCars.length > 0 ? (
 					<section>
 						<div className='home__cars-wrapper'>
