@@ -5,7 +5,7 @@ const nextConfig = {
 	},
 };
 const env = {
-	rapidApiKey: 'cf98a584bcmshc6d9c831137ca4cp183d12jsn56f9a0100961',
+	rapidApiKey: 'key',
 };
 
 module.exports = {nextConfig, env};
